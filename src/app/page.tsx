@@ -9,7 +9,7 @@ export default function Page(): JSX.Element {
         {/* ASCII ANIMATION - Top on mobile with header overlay, Right on desktop */}
         <div className="order-1 md:order-2 relative h-[50vh] md:h-screen w-full">
           {/* Mobile-only header overlay */}
-          <header className="md:hidden absolute top-6 left-6 z-10 flex items-center gap-2">
+          <header className="md:hidden  top-6 left-6 z-10 flex items-center gap-2 fixed">
             <img
               className="w-10 h-10 object-cover"
               alt="Maki logo"
@@ -42,13 +42,13 @@ export default function Page(): JSX.Element {
           </header>
 
           {/* Main Content */}
-          <section className="w-full max-w-[500px] flex flex-col gap-8 sm:gap-10 md:gap-[52px]">
+          <section className="w-full max-w-[500px] flex flex-col gap-10 sm:gap-12 md:gap-16">
             {/* Headline - Responsive sizing */}
             <h2 className="crimson font-normal text-black text-3xl sm:text-4xl md:text-5xl lg:text-[56px] leading-tight md:leading-[56px]">
               Your Personal <br /> Assistant
             </h2>
 
-            <div className="flex flex-col items-start gap-6 sm:gap-8 md:gap-9 w-full">
+            <div className="flex flex-col items-start gap-8 sm:gap-10 md:gap-12 w-full">
               {/* Description - Responsive text */}
               <p className="crimson font-normal text-black opacity-90 text-base sm:text-lg md:text-xl leading-relaxed md:leading-6 max-w-prose">
                 Meet your personal assistant — a comprehensive platform offering
@@ -57,7 +57,7 @@ export default function Page(): JSX.Element {
               </p>
 
               {/* CTA Button with Icon */}
-              <button className="flex items-center justify-center gap-2 px-5 py-3 sm:px-6 sm:py-3.5 bg-black rounded-full hover:bg-gray-800 transition-all duration-200 group">
+              <button className="flex items-center justify-center gap-2 px-6 py-3.5 sm:px-8 sm:py-4 bg-black rounded-full hover:bg-gray-800 transition-all duration-200 group">
                 <span className="poppins-semibold text-white text-sm sm:text-base leading-tight whitespace-nowrap">
                   Try for Free
                 </span>
@@ -79,11 +79,11 @@ export default function Page(): JSX.Element {
           </section>
 
           {/* Feature Grid - Responsive layout */}
-          <div className="mt-12 md:mt-16 grid grid-cols-2 gap-x-6 gap-y-8 sm:gap-x-8 sm:gap-y-10 md:gap-x-12 md:gap-y-12 max-w-[500px]">
+          <div className="mt-20 md:mt-28 grid grid-cols-2 gap-x-10 gap-y-14 sm:gap-x-12 sm:gap-y-16 md:gap-x-16 md:gap-y-20 max-w-[500px]">
             {/* Recollect */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg  flex items-center justify-center">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center">
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
@@ -108,9 +108,9 @@ export default function Page(): JSX.Element {
             </div>
 
             {/* Record */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg  flex items-center justify-center">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center">
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
@@ -135,9 +135,9 @@ export default function Page(): JSX.Element {
             </div>
 
             {/* Rebuild */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg  flex items-center justify-center">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center">
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
@@ -162,9 +162,9 @@ export default function Page(): JSX.Element {
             </div>
 
             {/* Reorganise */}
-            <div className="flex flex-col gap-2">
-              <div className="flex items-center gap-2">
-                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg  flex items-center justify-center">
+            <div className="flex flex-col gap-3 sm:gap-4">
+              <div className="flex items-center gap-3">
+                <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg flex items-center justify-center">
                   <svg
                     className="w-4 h-4 sm:w-5 sm:h-5"
                     fill="none"
